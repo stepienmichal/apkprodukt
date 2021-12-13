@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Produkt" Height="220" Width="350" Background="#FF646464">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Symbol" Content="Symbol:" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5"/>
+        <Label x:Name="Nazwa" Content="Nazwa:" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5"/>
+        <Label x:Name="liczbasztuk" Content="Liczba sztuk:" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5"/>
+        <Label x:Name="magazyn" Content="Magazyn:" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox x:Name="txtSymbol" Grid.Row="0" Grid.Column="1" Margin="10,5,10,5"/>
+        <TextBox x:Name="txtNzwa" Grid.Row="1" Grid.Column="1" Margin="10,5,10,5"/>
+        <TextBox x:Name="txtLiczbaSztuk" Grid.Row="2" Grid.Column="1" Margin="10,5,10,5"/>
+        <TextBox x:Name="txtMagazyn" Grid.Row="3" Grid.Column="1" Margin="10,5,10,5"/>
+        <Button x:Name="btnPotwierdz" Content="Potwierdź" Grid.Row="4" Grid.Column="1" MaxHeight="20" Margin="40,5,40,0" VerticalAlignment="Top" Background="#FFFF9A9A"/>
+
+    </Grid>
+</Window>
